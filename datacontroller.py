@@ -8,33 +8,38 @@
 
 import boto3
 from kaggle.api.kaggle_api_extended import KaggleApi
-import requests
-import zipfile
-import io
-from io import BytesIO
+import os
+
 
 #Step 1. Authenticate with Kaggle 
 api = KaggleApi()
-api.authenticate
+api.authenticate()
 
 #Step 2. Specify Dataset File & Bucket
 dataset_name = 'ashaychoudhary/heart-attack-in-youth-vs-adult-in-russia' 
 dataset_file = 'heart_attack_russia_youth_vs_adult.csv'
 bucket_name = 'kaggledata1'
 
-#Step 3. Download set as Zip file into memory 
-response = api.dataset_download_files(dataset_name, unzip=True)
+#Step 3. Self Explanitory 
+dataset_destination_folder = './'
 
-#Step 4. Create BytesIO obj to load into mem
-zip_file_obj = BytesIO(response)
+#Download the dataset and unzip it into current directory
+api.dataset_download_files(dataset_name,path = dataset_destination_folder,unzip=True)
 
-#Step 5. Unzip the file from memory
-with zipfile.ZipFile(zip_file_obj, 'r') as zip_ref:
-    with zip_ref.open(dataset_file) as my_file:
-        file_obj =BytesIO(my_file.read())
-        
-#Step 6. set up s3
-s3_client = boto3.client('s3',region_name ='us-east-1')   
+print(f"Sucessfully pulled the datasheet in the form of a zip file and store in local directory ")
 
-#Step 7. Upload contents to memory nm 
-    
+#Step 4. Upload dataset to AWS S3
+csv_filepath = os.path.join(dataset_destination_folder,dataset_file)
+
+s3_client = boto3.client('s3', region_name='us-east-1')
+
+#Step 5. Upload the file to the S3 bucket
+with open(csv_filepath, 'rb') as file_obj:
+    s3_client.upload_fileobj(file_obj, bucket_name, dataset_file)
+
+print(f"Dataset '{dataset_file}' uploaded to S3 bucket '{bucket_name}'!")
+
+#Step 6. To optimize memory utilization , we will remove the file locally after it is uploaded to s3.
+file_size = os.path.getsize(csv_filepath)
+os.remove(csv_filepath)
+print(f"Local file '{dataset_file}' deleted to save space. {file_size} bytes deleted")
