@@ -10,7 +10,6 @@ import boto3
 from kaggle.api.kaggle_api_extended import KaggleApi
 import os
 
-
 #Step 1. Authenticate with Kaggle 
 api = KaggleApi()
 api.authenticate()
@@ -18,6 +17,7 @@ api.authenticate()
 #Step 2. Specify Dataset File & Bucket
 dataset_name = 'ashaychoudhary/heart-attack-in-youth-vs-adult-in-russia' 
 dataset_file = 'heart_attack_russia_youth_vs_adult.csv'
+## this is what name will be stored into the s3 bucket 
 bucket_name = 'kaggledata1'
 
 #Step 3. Self Explanitory 
