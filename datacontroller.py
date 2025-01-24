@@ -29,12 +29,10 @@ def source_from_kaggle(dataset_nameARG, dataset_fileARG,bucket):
 
     #Download the dataset and unzip it into current directory
     api.dataset_download_files(dataset_name,path = dataset_destination_folder,unzip=True)
-
     print(f"Sucessfully pulled the datasheet in the form of a zip file and store in local directory ")
 
     #Step 4. Upload dataset to AWS S3
     csv_filepath = os.path.join(dataset_destination_folder,dataset_file)
-
     s3_client = boto3.client('s3', region_name='us-east-1')
 
     #Step 5. Upload the file to the S3 bucket
