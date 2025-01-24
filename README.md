@@ -16,7 +16,7 @@ S3 buckets are nothing more than an elastic file share. The code can be modified
 - The program will prompt you for the name of your bucket. 
 - Once you have created an AWS account , generate a secret and private access key, save these (as you may use them for future projects) 
 - Run the following command  
-    ''' bash 
+    '''bash 
     aws configure
     '''
 - Enter in your secret and private access key. do not share these with anyone else. 
@@ -29,9 +29,10 @@ NOTE : You MUST have a kaggle account (completely free)
 This link will guide you in 
 - Generating a kaggle.json file , which will sit in your home directory as ~/.kaggle/kaggle.json 
 - the Kaggle api will not function unless you completed the step above 
-    ### Kaggle Instructions (Requirement 1/2) 
+    ### Kaggle Instructions (Requirement 2/2) 
 - Sign up for Kaggle.com account, kaggle.com 
         - ~/.kaggle/kaggle.json  <-- contains your api key generated from the www.kaggle.com/settings/account page and create a token.  
+        - The kaggle dependecy will be packaged into this repository , so in theory , you should not need to run pip install kaggle. 0_0
         
 ## Version 1.0 goals
 In the first release of this software , we will be sure to include
