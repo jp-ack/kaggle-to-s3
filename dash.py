@@ -9,10 +9,6 @@ import datacontroller
 
 def main():
     
-    #ask user for what file they want and feed it into the datacontroller method
-    #kaggle_user_info = str(input("type name of bucket: user/data"))
-    #dataset_file_name = str(input("please type in the name of the csv"))
-    
     print("Welcome to Kaggle Data Controller interface , LUX Software 2025")
     dataset_publisher= str(input("please enter the name of the data scientist and page , john/datapage :")) 
     dataset_file_name = str(input("please input the name of the csv file in the publishers page :"))
@@ -25,8 +21,7 @@ def main():
     data = transform.pull_from_s3(bucket,dataset_file_name)
     
     #print if data is returned 
-    
     print(data.head(20))
    
-
-main()
+if __name__ == '__main__':
+    main()
