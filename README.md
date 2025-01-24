@@ -16,9 +16,9 @@ S3 buckets are nothing more than an elastic file share. The code can be modified
 - The program will prompt you for the name of your bucket. 
 - Once you have created an AWS account , generate a secret and private access key, save these (as you may use them for future projects) 
 - Run the following command  
-    '''bash 
-    aws configure
-    '''
+'''bash 
+aws configure
+'''
 - Enter in your secret and private access key. do not share these with anyone else. 
 - Enter in your region that your S3 bucket is configured to 
 - Enter 'json' for format 
