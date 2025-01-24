@@ -8,10 +8,9 @@ you must ensure the following :
         -You have a kaggle API key. This , in short , is a JSON file provided by kaggle and must be stored in your
          home folder as ./kaggle ( See Kaggle help below)
 
-#S3 Configuration
-        -test
-
-#Kaggle Configuration
+# S3 Configuration
+        
+# Kaggle Configuration
 
 
 ## Version 1.0 goals
