@@ -16,9 +16,9 @@ S3 buckets are nothing more than an elastic file share. The code can be modified
 - The program will prompt you for the name of your bucket. 
 - Once you have created an AWS account , generate a secret and private access key, save these (as you may use them for future projects) 
 - Run the following command  
-```bash 
-        aws configure
-```
+    ```bash 
+    aws configure
+    ```
 - Enter in your secret and private access key. do not share these with anyone else. 
 - Enter in your region that your S3 bucket is configured to 
 - Enter 'json' for format 
@@ -33,9 +33,9 @@ This link will guide you in
 - Sign up for Kaggle.com account, kaggle.com 
         - ~/.kaggle/kaggle.json  <-- contains your api key generated from the www.kaggle.com/settings/account page and create a token.  
         - The kaggle dependecy will be packaged into this repository , so in theory , you should NOT need to run 
-```bash
+        ```bash
         pip install kaggle. 0_0
-```       
+        ```       
 ## Version 1.0 goals
 In the first release of this software , we will be sure to include
     - Ability to write-in the name of the user and their dataset to use
