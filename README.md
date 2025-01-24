@@ -23,13 +23,13 @@ S3 buckets are nothing more than an elastic file share. The code can be modified
 - Enter in your region that your S3 bucket is configured to 
 - Enter 'json' for format 
 - You are finished this step. 
-## Kaggle Configuration
+## (Requirement 2/2) Kaggle Configuration
 https://www.kaggle.com/docs/api#getting-started-installation-&-authentication
 NOTE : You MUST have a kaggle account (completely free)
 This link will guide you in 
 - Generating a kaggle.json file , which will sit in your home directory as ~/.kaggle/kaggle.json 
 - the Kaggle api will not function unless you completed the step above 
-    ### (Requirement 2/2) Kaggle Instructions  
+    ###  Kaggle Instructions   
 - Sign up for Kaggle.com account, kaggle.com 
         - ~/.kaggle/kaggle.json  <-- contains your api key generated from the www.kaggle.com/settings/account page and create a token.  
         - The kaggle dependecy will be packaged into this repository , so in theory , you should NOT need to run  
