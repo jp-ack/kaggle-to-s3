@@ -42,5 +42,5 @@ In the first release of this software , we will be sure to include
     - Ability to use s3 bucket ,
     - Pytest unit testing to ensure reliability and secure transfer of data
 
-## Procedure
-- 
+## Why this is useful?
+- Streamline your data aquisition from kaggle using three fields. 
