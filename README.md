@@ -9,28 +9,28 @@ This program requires 2 things before it can work properly:
 
 ## AWS S3 Configuration
 S3 buckets are nothing more than an elastic file share. The code can be modified to not require an S3 bucket , but for the scope of this project: 
-    -Create an AWS account , (s3 buckets offer up to 5 gb of storage for free.) 
-    -Create an S3 bucket ( There are many comprehensive tutorials online , and although many of you will be able to figure it out on your own , here is the
-     documentation https://docs.aws.amazon.com/s3/ ) 
-    -Be sure to follow the proper S3 naming conventions , names are unique by the area. (IE , all names in us-east-1 are unique , but not unique to us-west-1) 
-    -The program will prompt you for the name of your bucket. 
-    -Once you have created an AWS account , generate a secret and private access key, save these (as you may use them for future projects) 
-    -Run the following command  
+- Create an AWS account , (s3 buckets offer up to 5 gb of storage for free.) 
+- Create an S3 bucket ( There are many comprehensive tutorials online , and although many of you will be able to figure it out on your own , here is the
+ documentation https://docs.aws.amazon.com/s3/ ) 
+- Be sure to follow the proper S3 naming conventions , names are unique by the area. (IE , all names in us-east-1 are unique , but not unique to us-west-1) 
+- The program will prompt you for the name of your bucket. 
+- Once you have created an AWS account , generate a secret and private access key, save these (as you may use them for future projects) 
+- Run the following command  
     ''' bash 
     aws configure
     '''
-    -Enter in your secret and private access key. do not share these with anyone else. 
-    -Enter in your region that your S3 bucket is configured to 
-    -Enter 'json' for format 
-    -You are finished this step. 
+- Enter in your secret and private access key. do not share these with anyone else. 
+- Enter in your region that your S3 bucket is configured to 
+- Enter 'json' for format 
+- You are finished this step. 
 ## Kaggle Configuration
 https://www.kaggle.com/docs/api#getting-started-installation-&-authentication
 NOTE : You MUST have a kaggle account (completely free)
 This link will guide you in 
-    -Generating a kaggle.json file , which will sit in your home directory as ~/.kaggle/kaggle.json 
-    -the Kaggle api will not function unless you completed the step above 
+- Generating a kaggle.json file , which will sit in your home directory as ~/.kaggle/kaggle.json 
+- the Kaggle api will not function unless you completed the step above 
     ### Kaggle Instructions (Requirement 1/2) 
-        - Sign up for Kaggle.com account, kaggle.com 
+- Sign up for Kaggle.com account, kaggle.com 
         - ~/.kaggle/kaggle.json  <-- contains your api key generated from the www.kaggle.com/settings/account page and create a token.  
         
 ## Version 1.0 goals
