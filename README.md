@@ -3,7 +3,7 @@ This program will serve as a component in an ETL pipeline , by using the kaggle 
 
 # Requirements 
 This program requires 2 things before it can work properly:
-- You have an AWS s3 bucket (which you have access to) , See 'S3 Help' Below
+- You have an AWS s3 bucket (which you have access to) , See 'AWS S3 Configuration' Below
 - You have a kaggle API key. This , in short , is a JSON file provided by kaggle and must be stored in your
   home folder as ./kaggle ( See Kaggle help below)
 
@@ -41,3 +41,6 @@ In the first release of this software , we will be sure to include
     - Ability to write-in the name of the user and their dataset to use
     - Ability to use s3 bucket ,
     - Pytest unit testing to ensure reliability and secure transfer of data
+
+## Procedure
+    -
