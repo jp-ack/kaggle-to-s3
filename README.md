@@ -1,7 +1,7 @@
 # Kaggle Data Controller 1.0
 This program will serve as a component in an ETL pipeline , by using the kaggle API to pull datasets from the web , and directly send them into an s3 bucket.
 
-## Requirements 
+# Requirements 
 This program requires 2 things before it can work properly:
         -You have an AWS s3 bucket (which you have access to) , See 'S3 Help' Below
         -You have a kaggle API key. This , in short , is a JSON file provided by kaggle and must be stored in your
