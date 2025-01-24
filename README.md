@@ -3,13 +3,13 @@ This program will serve as a component in an ETL pipeline , by using the kaggle 
 
 # Requirements 
 This program requires 2 things before it can work properly:
-- You have an AWS s3 bucket (which you have access to) , See 'AWS S3 Configuration' Below
+- You have an AWS S3 bucket (which you have access to) , See 'AWS S3 Configuration' Below
 - You have a kaggle API key. This , in short , is a JSON file provided by kaggle and must be stored in your
   home folder as ./kaggle ( See Kaggle help below)
 
 ## Requirement (1/2) AWS S3 Configuration 
 S3 buckets are nothing more than an elastic file share. The code can be modified to not require an S3 bucket , but for the scope of this project: 
-- Create an AWS account , (s3 buckets offer up to 5 gb of storage for free.) 
+- Create an AWS account , (S3 buckets offer up to 5 gb of storage for free.) 
 - Create an S3 bucket ( There are many comprehensive tutorials online , and although many of you will be able to figure it out on your own , here is the
  documentation https://docs.aws.amazon.com/s3/ ) 
 - Be sure to follow the proper S3 naming conventions , names are unique by the area. (IE , all names in us-east-1 are unique , but not unique to us-west-1) 
