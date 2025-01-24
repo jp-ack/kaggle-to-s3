@@ -33,9 +33,9 @@ This link will guide you in
 - Sign up for Kaggle.com account, kaggle.com 
         - ~/.kaggle/kaggle.json  <-- contains your api key generated from the www.kaggle.com/settings/account page and create a token.  
         - The kaggle dependecy will be packaged into this repository , so in theory , you should NOT need to run  
-        ```bash
-        pip install kaggle. 0_0
-        ```       
+    ```bash
+    pip install kaggle. 0_0
+    ```       
 ## Version 1.0 goals
 In the first release of this software , we will be sure to include
     - Ability to write-in the name of the user and their dataset to use
