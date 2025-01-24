@@ -7,7 +7,7 @@ This program requires 2 things before it can work properly:
         -You have a kaggle API key. This , in short , is a JSON file provided by kaggle and must be stored in your
          home folder as ./kaggle ( See Kaggle help below)
 
-## AWS S3 Configuration
+## Requirement (1/2) AWS S3 Configuration 
 S3 buckets are nothing more than an elastic file share. The code can be modified to not require an S3 bucket , but for the scope of this project: 
 - Create an AWS account , (s3 buckets offer up to 5 gb of storage for free.) 
 - Create an S3 bucket ( There are many comprehensive tutorials online , and although many of you will be able to figure it out on your own , here is the
@@ -29,7 +29,7 @@ NOTE : You MUST have a kaggle account (completely free)
 This link will guide you in 
 - Generating a kaggle.json file , which will sit in your home directory as ~/.kaggle/kaggle.json 
 - the Kaggle api will not function unless you completed the step above 
-    ### Kaggle Instructions (Requirement 2/2) 
+    ### (Requirement 2/2) Kaggle Instructions  
 - Sign up for Kaggle.com account, kaggle.com 
         - ~/.kaggle/kaggle.json  <-- contains your api key generated from the www.kaggle.com/settings/account page and create a token.  
         - The kaggle dependecy will be packaged into this repository , so in theory , you should NOT need to run  
